@@ -7,7 +7,7 @@ Provides an adapter from MongoDB's `IAsyncCursor<TDocument>` and `IAsyncCursorSo
 
 This allows plugging MongoDB's custom async iterators into the async LINQ ecosystem by wrapping `IAsyncCursorSource<TDocument>` or `IAsyncCursor<TDocument>` in an `IAsyncEnumerable<T>` implementation.
 
-For example, iterating on a result with `await foreach`:
+For example, iterating on a find result with `await foreach`:
 
 ```csharp
 IMongoCollection<Hamster> collection = // ...
@@ -24,7 +24,7 @@ Or any other async LINQ operator:
 ```csharp
 IMongoCollection<Hamster> collection = // ...
 
-int count = 
+int groupCount = 
     await collection.Find(_ => true).
         ToAsyncEnumerable().
         GroupBy(hamster => hamster.Age).
