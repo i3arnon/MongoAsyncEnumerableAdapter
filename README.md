@@ -25,7 +25,7 @@ Or any other async LINQ operator:
 IMongoCollection<Hamster> collection = // ...
 
 int count = 
-    await collection.AsQueryable().
+    await collection.Find(_ => true).
         ToAsyncEnumerable().
         GroupBy(hamster => hamster.Age).
         CountAsync();
