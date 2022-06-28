@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5DB6CC6-41C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoAsyncEnumerableAdapter", "src\MongoAsyncEnumerableAdapter\MongoAsyncEnumerableAdapter.csproj", "{5330E9A3-FCAF-439C-B89D-F76961BD988A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{983A9BC1-8C71-424E-9E9A-2379C03DD9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoAsyncEnumerableAdapterTests", "tests\MongoAsyncEnumerableAdapterTests\MongoAsyncEnumerableAdapterTests.csproj", "{C55694E9-F770-48A0-AB93-072B0345900B}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,8 +39,21 @@ Global
 		{5330E9A3-FCAF-439C-B89D-F76961BD988A}.Release|x64.Build.0 = Release|Any CPU
 		{5330E9A3-FCAF-439C-B89D-F76961BD988A}.Release|x86.ActiveCfg = Release|Any CPU
 		{5330E9A3-FCAF-439C-B89D-F76961BD988A}.Release|x86.Build.0 = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|x64.Build.0 = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Debug|x86.Build.0 = Debug|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|x64.ActiveCfg = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|x64.Build.0 = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C55694E9-F770-48A0-AB93-072B0345900B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5330E9A3-FCAF-439C-B89D-F76961BD988A} = {E5DB6CC6-41C5-464A-BE85-06C30C59A241}
+		{C55694E9-F770-48A0-AB93-072B0345900B} = {983A9BC1-8C71-424E-9E9A-2379C03DD9C8}
 	EndGlobalSection
 EndGlobal
